@@ -1,0 +1,37 @@
+{
+        "pages": [
+                "pages/index/index",
+                "pages/logs/logs",
+                "pages/me/me",
+                "pages/memory/memory"
+        ],
+        "window": {
+                "backgroundTextStyle": "light",
+                "navigationBarBackgroundColor": "#fff",
+                "navigationBarTitleText": "天堂微信",
+                "navigationBarTextStyle": "black",
+                "enablePullDownRefresh": true
+        },
+        "tabBar": {
+                "color": "#a9b7b7",
+                "selectedColor": "#11cd6e",
+                "borderStyle": "black",
+                "list": [
+
+                        {
+                                "selectedIconPath": "images/memorySelected.png",
+                                "iconPath": "images/memory.png",
+                                "pagePath": "pages/index/index",
+                                "text": "思念"
+                        },
+                        {
+                                "selectedIconPath": "images/meSelected.png",
+                                "iconPath": "images/me.png",
+                                "pagePath": "pages/me/me",
+                                "text": "我"
+                        }
+                ]
+        },
+        "style": "v2",
+        "sitemapLocation": "sitemap.json"
+}
