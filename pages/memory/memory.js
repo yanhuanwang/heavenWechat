@@ -1,11 +1,29 @@
 // pages/memory.js
+var app = getApp()
+var util = require('../../utils/util')
+
 Page({
 
         /**
          * Page initial data
          */
         data: {
-
+                list:[{
+            img:"/images/memory.png",
+            name:"gg",
+            message:"哈哈",
+            time:"22:00",
+            count:1,
+            id:"1"
+        },
+        {
+            img:"/images/me.png",
+            name:"mm",
+            message:"干什么呢",
+            time:"17:30",
+            count:0,
+            id:"2"
+        }]
         },
 
         /**
@@ -19,7 +37,6 @@ Page({
          * Lifecycle function--Called when page is initially rendered
          */
         onReady: function () {
-
         },
 
         /**

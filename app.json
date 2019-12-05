@@ -1,9 +1,9 @@
 {
         "pages": [
+                "pages/memory/memory",
                 "pages/index/index",
                 "pages/logs/logs",
-                "pages/me/me",
-                "pages/memory/memory"
+                "pages/me/me"
         ],
         "window": {
                 "backgroundTextStyle": "light",
@@ -21,7 +21,7 @@
                         {
                                 "selectedIconPath": "images/memorySelected.png",
                                 "iconPath": "images/memory.png",
-                                "pagePath": "pages/index/index",
+                                "pagePath": "pages/memory/memory",
                                 "text": "思念"
                         },
                         {
