@@ -1,20 +1,62 @@
 // pages/me.js
+var app = getApp()
 Page({
 
-        /**
-         * Page initial data
-         */
         data: {
-
-        },
+                 userInfo: {},
+                list: [
+                        {
+                                list_tool: [
+                                        {
+                                                img: "../../images/add.png",
+                                                name: "添加亲人",
+                                                url: ""
+                                        },
+                                ]
+                        },
+                        {
+                                list_tool:[
+                                {
+                                        img: "../../images/wallet.png",
+                                        name: "钱包",
+                                        url : ""
+                                },
+                                {
+                                        img: "../../images/order.png",
+                                        name: "订单",
+                                        url: ""
+                                },
+                                ]
+                        } ,
+                        {
+                                list_tool:[
+                                {
+                                        img: "../../images/setting.png",
+                                        name: "设置",
+                                        url:""
+                                }
+                                ]
+                         },
+        ]
+},
 
         /**
          * Lifecycle function--Called when page load
          */
         onLoad: function (options) {
-
+                var that = this
+                //调用应用实例的方法获取全局数据
+                that.setData({
+                        userInfo: app.globalData.userInfo
+                })
         },
 
+        goPage: function (event) {
+                console.log(event.currentTarget.dataset.log);
+                wx.navigateTo({
+                        url: event.currentTarget.dataset.url
+                })
+        },
         /**
          * Lifecycle function--Called when page is initially rendered
          */

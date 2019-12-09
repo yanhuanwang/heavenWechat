@@ -19,9 +19,9 @@ Page({
         {
             img:"/images/me.png",
             name:"mm",
-            message:"干什么呢",
+            message:"别找事",
             time:"17:30",
-            count:0,
+            count:99,
             id:"2"
         }]
         },
@@ -37,8 +37,24 @@ Page({
          * Lifecycle function--Called when page is initially rendered
          */
         onReady: function () {
+        
         },
-
+        goPage: function (e) {
+                console.log(e)
+                var _self = this;
+                var newlist = _self.data.list
+                var index = e.currentTarget.dataset.index
+                newlist[index].count = 0;
+                _self.setData({
+                        list: newlist
+                })
+                // console.log(e.currentTarget.dataset.index)
+                // console.log(e.target.dataset.name)
+                wx.navigateTo({
+                        url: '../message/message?name=' + e.currentTarget.dataset.name + "&id=" + e.currentTarget.dataset.id
+                })
+                // console.log(test);
+        },
         /**
          * Lifecycle function--Called when page show
          */

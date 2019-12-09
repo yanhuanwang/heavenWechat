@@ -3,7 +3,8 @@
                 "pages/memory/memory",
                 "pages/index/index",
                 "pages/logs/logs",
-                "pages/me/me"
+                "pages/me/me",
+                "pages/message/message"
         ],
         "window": {
                 "backgroundTextStyle": "light",
@@ -17,7 +18,6 @@
                 "selectedColor": "#11cd6e",
                 "borderStyle": "black",
                 "list": [
-
                         {
                                 "selectedIconPath": "images/memorySelected.png",
                                 "iconPath": "images/memory.png",
