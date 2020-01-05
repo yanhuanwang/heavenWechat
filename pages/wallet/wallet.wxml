@@ -1,0 +1,19 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="container">
+    <view class="balance">
+        <view class="balance-image">
+        <image src="../../images/balance.png"></image>
+        </view>
+        <view>
+            <text class="balance-header">余额（元）</text>
+        </view>
+        <view>
+            <text class="balance-amount">{{balance}}</text>
+        </view>
+    </view>
+    <view>
+    <button bindtap="movetoCharge" class="btn-charge">充值</button>
+    <view class="padding"> </view>
+    <button bindtap="movetoCash" class="btn-charge">提现</button>
+    </view>
+</view>

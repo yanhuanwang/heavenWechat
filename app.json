@@ -4,7 +4,10 @@
                 "pages/index/index",
                 "pages/logs/logs",
                 "pages/me/me",
-                "pages/message/message"
+                "pages/message/message",
+                "pages/contact/contact",
+                "pages/wallet/wallet",
+                "pages/createContact/createContact"
         ],
         "window": {
                 "backgroundTextStyle": "light",

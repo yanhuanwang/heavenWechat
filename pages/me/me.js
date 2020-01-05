@@ -7,10 +7,11 @@ Page({
                 list: [
                         {
                                 list_tool: [
+
                                         {
-                                                img: "../../images/add.png",
-                                                name: "添加亲人",
-                                                url: ""
+                                                img: "../../images/person.png",
+                                                name: "思念的人",
+                                                url: "../contact/contact"
                                         },
                                 ]
                         },
@@ -19,7 +20,7 @@ Page({
                                 {
                                         img: "../../images/wallet.png",
                                         name: "钱包",
-                                        url : ""
+                                        url : "../wallet/wallet"
                                 },
                                 {
                                         img: "../../images/order.png",

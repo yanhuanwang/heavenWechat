@@ -1,27 +1,20 @@
-// pages/memory.js
-var app = getApp()
-var util = require('../../utils/util')
-
+// pages/contact/contact.js
 Page({
 
         /**
          * Page initial data
          */
         data: {
-                list:[{
-            img:"/images/memory.png",
-            name:"gg",
-            message:"哈哈",
-            time:"22:00",
-            id:"1"
-        },
-        {
-            img:"/images/me.png",
-            name:"mm",
-            message:"别找事",
-            time:"17:30",
-            id:"2"
-        }]
+                list: [{
+                        img: "/images/memory.png",
+                        name: "郭德纲",
+                        id: "1"
+                },
+                {
+                        img: "/images/me.png",
+                        name: "于谦",
+                        id: "2"
+                }]
         },
 
         /**
@@ -35,29 +28,21 @@ Page({
          * Lifecycle function--Called when page is initially rendered
          */
         onReady: function () {
-        
+
         },
-        goPage: function (e) {
-                console.log(e)
-                var _self = this;
-                var newlist = _self.data.list
-                var index = e.currentTarget.dataset.index
-                newlist[index].count = 0;
-                _self.setData({
-                        list: newlist
-                })
-                // console.log(e.currentTarget.dataset.index)
-                // console.log(e.target.dataset.name)
-                wx.navigateTo({
-                        url: '../message/message?name=' + e.currentTarget.dataset.name + "&id=" + e.currentTarget.dataset.id
-                })
-                // console.log(test);
-        },
+
         /**
          * Lifecycle function--Called when page show
          */
         onShow: function () {
 
+        },
+
+        goPage: function (e) {
+                console.log(e);
+                wx.navigateTo({
+                        url: '../createContact/createContact'
+                })
         },
 
         /**

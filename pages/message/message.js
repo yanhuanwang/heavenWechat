@@ -20,7 +20,6 @@ Page({
          * Lifecycle function--Called when page load
          */
         onLoad: function (options) {
-                var app = getApp()
                 var _self = this
                 getData.getMessage(options.id, _self)
                 _self.setData({
@@ -35,6 +34,7 @@ Page({
          * Lifecycle function--Called when page is initially rendered
          */
         onReady: function () {
+                //页面渲染完成
                 var _self = this
                 wx.setNavigationBarTitle({
                         title: _self.data.title

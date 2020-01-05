@@ -28,17 +28,16 @@
     <view class="weui-icon_success"></view>
 </scroll-view>
 <view class="wa-row" style="height:10%;">
-    <view class="wa-col-10 text-center icon ion-ios-mic" style="line-height:30px" bindtap="getvoice">麦</view>
+    <view class="wa-col-10 text-center iconfont icon-luyinyuyin" style="line-height:30px" bindtap="getvoice"></view>
     <view class="wa-col-66 padding_half">
-        <input placeholder="请输入消息" />
+        <input class="weui-input" placeholder="请输入消息" type="text"/>
     </view>
-    <view class="wa-col-10 text-center icon ion-happy-outline" style="line-height:30px">表</view>
-    <view class="wa-col-10 text-center icon ion-ios-plus-outline text-center" style="line-height:30px" bindtap="elseBtn">+</view>
+    <view class="wa-col-10 text-center iconfont icon-plus text-center" style="line-height:30px" bindtap="elseBtn"></view>
 </view>
 <view id="elsePanel" animation="{{animation}}">
     <view class="wa-row">
         <view class="wa-col-33" bindtap="chooseImg"><view class="text-center" style="line-height:50px">图片</view></view>
-        <view class="wa-col-33" bindtap="getlocat"><view class="text-center" style="line-height:50px">位置</view></view>
+        <view class="wa-col-33" bindtap="getlocat"><view class="text-center" style="line-height:50px">test</view></view>
         <view class="wa-col-33" bindtap="stopvoice"><view class="text-center" style="line-height:50px">test</view></view>
         
     </view>

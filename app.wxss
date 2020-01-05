@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import "wa-ui.wxss";
+@import "iconfont.wxss";
 .container {
   height: 100%;
   display: flex;
@@ -8,8 +10,8 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
-padding{
-  padding:20rpx;
+.padding{
+  padding: 20rpx;
 }
 .padding_half{
   padding: 10rpx;
@@ -40,7 +42,7 @@ padding{
   display: flex;
 }
 .title{
-  font-family: "微软雅黑";
+
   font-size: 32rpx;
 }
 .message{
@@ -109,3 +111,92 @@ padding{
   float: right;
 }
 
+.balance{
+  background-color: #fff;
+  padding: 60rpx 0;
+  text-align: center;
+
+}
+.balance-header{
+  font-size: 24rpx;
+}
+.balance-image image{
+  float: center;
+  width: 64rpx;
+  height: 64rpx;
+}
+.balance-amount{
+  display: inline-block;
+  padding: 20rpx 0;
+  font-size: 100rpx;
+  font-weight: 700;
+}
+.full-image image{
+  float: center;
+  width: 128rpx;
+  height: 128rpx;
+}
+.contact-add {
+  display: flex;
+  padding: 5rpx 35rpx;
+  background: #f2f3f5 ;
+  border-bottom: 1rpx solid #eee;
+  position:relative;
+}
+.contact-add image{
+  float: left;
+  width: 64rpx;
+  height: 64rpx;
+  box-sizing: border-box
+}
+.contact-text {
+  display: flex;
+  padding: 10rpx 20rpx;
+  font-size: 32rpx;
+  color: lightgrey;
+}
+.right-Avatar{
+  float:right;
+  width: 85rpx;
+  height: 85rpx;
+}
+.right-Triangle{
+  float:right;
+  margin-top: 35rpx;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 12px solid yellowgreen;
+  border-bottom: 8px solid transparent;
+}
+.right-message{
+  float: right;
+  margin-top: 10rpx;
+  line-height: 65rpx;
+  background: yellowgreen;
+  border-radius: 10rpx;
+  font-size: 12px;
+}
+
+.left-Avatar{
+  float:left;
+  width: 85rpx;
+  height: 85rpx;
+}
+.left-Triangle{
+  float:left;
+  margin-top: 35rpx;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 12px solid yellowgreen;
+  border-bottom: 8px solid transparent;
+}
+.left-message{
+  float: left;
+  margin-top: 10rpx;
+  line-height: 65rpx;
+  background: yellowgreen;
+  border-radius: 10rpx;
+  font-size: 12px;
+}

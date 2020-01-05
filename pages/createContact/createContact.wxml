@@ -1,0 +1,26 @@
+<!--pages/createContact/createContact.wxml-->
+<view class="container">
+    <view class="balance">
+        <view class="full-image" bindtap="chooseImg">
+        <image src="../../images/addContact.png"></image>
+        </view>
+        <view>
+            <text class="balance-header">头像（选填）</text>
+        </view>
+        <view class="padding"></view>
+        <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="对思念人的称呼"/>
+      </view>
+    </view>
+        <view>
+            <text class="balance-amount">{{balance}}</text>
+        </view>
+    </view>
+    <view>
+    <button bindtap="movetoCharge" class="btn-charge">创建</button>
+    <view class="padding"> </view>
+    <button bindtap="movetoCash" class="btn-charge">取消</button>
+    </view>
+</view>
+
