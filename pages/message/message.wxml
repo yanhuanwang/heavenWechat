@@ -37,7 +37,7 @@
 <view id="elsePanel" animation="{{animation}}">
     <view class="wa-row">
         <view class="wa-col-33" bindtap="chooseImg"><view class="text-center" style="line-height:50px">图片</view></view>
-        <view class="wa-col-33" bindtap="getlocat"><view class="text-center" style="line-height:50px">test</view></view>
+        <view class="wa-col-33" bindtap="getlocat"><view class="text-center" style="line-height:50px">红包</view></view>
         <view class="wa-col-33" bindtap="stopvoice"><view class="text-center" style="line-height:50px">test</view></view>
         
     </view>
